@@ -1,0 +1,66 @@
+{
+ "signatures": [
+  {
+   "keyid": "83d03c9dd5ce9020f6a42203e1723aa42cb8be06b74256213445a49b6e51b8ad",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2025-12-02T15:45:03Z",
+  "keys": {
+   "51d67a9e919f031b1a21e731710211fd6e25df0d86949bb0456f9445f40feacd": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEpYg2bniPXaNjAFWznDMqbpWuoukK\nQIULZATBnS7qTYQT0TUQVQgHeVl/QKwX9xD89fjveQjuE4PVqSFsyjwDKA==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-online-uri": "azurekms://sorayaormazabalmayo-key1.vault.azure.net/keys/key-real2/308f6513a4ce4f129fc7085d3a16a3ef"
+   },
+   "83d03c9dd5ce9020f6a42203e1723aa42cb8be06b74256213445a49b6e51b8ad": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "sorayaormazabal@gmail.com",
+     "issuer": "https://github.com/login/oauth"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-keyowner": "@sorayaormazabalmayo"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "83d03c9dd5ce9020f6a42203e1723aa42cb8be06b74256213445a49b6e51b8ad"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "51d67a9e919f031b1a21e731710211fd6e25df0d86949bb0456f9445f40feacd"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "83d03c9dd5ce9020f6a42203e1723aa42cb8be06b74256213445a49b6e51b8ad"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "51d67a9e919f031b1a21e731710211fd6e25df0d86949bb0456f9445f40feacd"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
